@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_costume_filters %}
+  {% block body_block %}
+    <div class="container">
+      <h1>WELCOME IN HOME PAGE</h1>
+      <h1>{{text | cut_1:'world'}}</h1>
+    </div>
+  {% endblock %}
